@@ -3,8 +3,28 @@
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<title></title>
+
+
+	<!--Load Random Stylesheet from css directory -->
+	<?php
+		$dir = 'css/*';
+		$styles = array();
+		foreach(glob($dir) as $file){
+			if(!is_dir($file)){
+				array_push($styles, $file);
+				
+			}
+		}
+		$rand =  rand(0, count($styles) - 1);
+		
+		echo '<link rel="stylesheet" type="text/css" href="' . $styles[$rand] . '">';
+
+	?>
+
+
 </head>
 <body>
+
 	<h1 id="davon"></h1>
 
 
@@ -15,12 +35,10 @@
 		var dataNum = data.length;
 		$.each(data, function(index, value){
 			tweets.push(value.text);
-
 			if (tweets.length === dataNum) {
 				//channel Davon's mind after all the data has loaded
 				newQuote();
 			}
-
 		});
 
 	});	
