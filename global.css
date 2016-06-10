@@ -1,0 +1,12 @@
+#icons{
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+#icons i{
+  color: #fff;
+  opacity: .9;
+  font-size: 1.5em;
+}

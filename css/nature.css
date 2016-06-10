@@ -11,10 +11,15 @@ html{
     color: #FFF;
     width: 50%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translateX(-50%);
     top: 35%;
     font-family: Helvetica;
-    text-shadow: 0px 0px 10px rgba(0,0,0,.3);
+    text-shadow: 0px 0px 10px rgba(0,0,0,1);
 
     
+}
+@media (min-width:2000px) {
+    #davon {
+        font-size: 3.6em;
+    }
 }
