@@ -6,20 +6,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link rel="stylesheet" href="global.css">
 
-	<!--Load Random Stylesheet from css directory -->
-	<?php
-		$dir = 'css/*';
-		$styles = array();
-		foreach(glob($dir) as $file){
-			if(!is_dir($file)){
-				array_push($styles, $file);
-			}
-		}
-		$rand =  rand(0, count($styles) - 1);
-
-		echo '<link rel="stylesheet" type="text/css" href="' . $styles[$rand] . '">';
-	?>
-
+	<link rel="stylesheet" href="css/nature.css">
 </head>
 <body>
 
