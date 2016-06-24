@@ -2,7 +2,6 @@
 <html>
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script src="html2canvas.js"></script>
 	<title>Davon once said:</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link rel="stylesheet" href="global.css">
@@ -47,7 +46,7 @@
 			}
 		});
 
-	});	
+	});
 	//Gimmie a random tweet
 	var newQuote = function(){
 		console.log("running");
@@ -66,8 +65,8 @@
 			})
 		}
 	}
-	
-	
+
+
 </script>
 </body>
 </html>
